@@ -5,8 +5,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
 
-    <div class="header">
-        <a href=""><img src="../../font.png" alt=""></a>
+    <div class="linkedin">
+        <RouterLink to="/"><img src="../../font.png" alt=""></RouterLink>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
     </div>
@@ -18,12 +18,14 @@ body{
     background-color: #FFFBE2;
 }
 
-.header{
-    height: 10vh;
+.linkedin{
+    height: 7vh;
     padding: 0 13vw;
+    margin: 0 30vw;
+    border-radius: 30px;
     position: fixed;
-    top: 0%;
-    background-color: pink;
+    top: 3%;
+    background-color: rgb(184, 226, 159);
     z-index: 1;
 }
 </style>
